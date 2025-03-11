@@ -1,0 +1,152 @@
+.property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0px;
+}
+
+/* Grid Layout */
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 48px;
+  align-items: flex-start;
+}
+
+/* Property Card */
+.property-card {
+  background: black;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 16px;
+  border: 1px double white;
+  border-radius: 12px;
+}
+
+/* Property Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+/* Actions & Button Styling */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.book-btn {
+  background: #2bb673;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 145px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #239d60;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: outfit;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+  width: 100%;
+}
+
+.pagination button {
+  background: #2bb673;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #239d60;
+}
+
+.pagination button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ✅ Responsive Fixes */
+@media screen and (max-width: 1024px) {
+  .property-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .property-card {
+    width: 100%;
+  }
+
+  .book-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .property-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .property-card {
+    width: 100%;
+  }
+
+  .book-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}

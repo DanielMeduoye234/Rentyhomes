@@ -1,0 +1,82 @@
+:root {
+    --background-color: black;
+    --text-color: white;
+    --button-color: green;
+    --icon-color: blue;
+}
+
+
+.About-text{
+    margin: 100px 0px;
+}
+
+.about-top{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-top img{
+    border-radius: 10px;
+}
+
+.about-top .about-text{
+    width: 50%;
+}
+
+.about-top .contactbtn{
+ padding: 10px 30px;
+ background: #1FAB71;
+ color: white;
+ font-size: 18px;
+ font-family: poppins;
+ margin: 10px 0px;
+ border-radius: 10px;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ margin-top: 20px;
+ transition: 0.5s ease-in-out;
+}
+
+.about-top .contactbtn:hover{
+    background: transparent;
+    border: 1px solid var(--button-color);
+}
+
+.about-buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.about-grids {
+    border: 1px solid var(--button-color);
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-grids:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-grids img{
+    margin: 20px 0px;
+}
+
+.about-grids h4{
+    font-size: 20px;
+    color: var(--button-color);
+    padding: 10px 0px;
+}
+
+.about-grids p{
+    font-size: 14px;
+    text-align: left;
+}

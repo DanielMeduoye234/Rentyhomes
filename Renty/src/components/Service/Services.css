@@ -1,0 +1,161 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --button-color: green;
+  --icon-color: blue;
+}
+
+.Services {
+  background-color: var(--background-color);
+  padding: 50px 20px;
+  margin: 0px;
+}
+
+.Services .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+
+/* Heading & Paragraph Styling */
+.right h5 {
+  color: var(--button-color);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.right h2 {
+  font-size: 40px;
+  text-align: left;
+  width: 410px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 16px;
+  text-align: left;
+  width: 400px;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.icon {
+  color: var(--icon-color);
+}
+
+/* Image */
+.lefty img {
+  margin: 30px 0px;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .Services .container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .right h2, .right p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .feature-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-item {
+    font-size: 15px;
+    width: 45%;
+    text-align: center;
+  }
+
+  .lefty img {
+    width: 85%;
+    height: auto;
+  }
+}
+
+/* Mobile View (Up to 768px) */
+@media (max-width: 768px) {
+  .Services {
+    padding: 30px 15px;
+  }
+
+  .Services .container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .right h5 {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .right h2 {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .features {
+    gap: 15px;
+  }
+
+  .feature-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .feature-item {
+    font-size: 14px;
+  }
+
+  .lefty img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}

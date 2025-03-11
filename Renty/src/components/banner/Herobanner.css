@@ -1,0 +1,70 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --button-color: green;
+  --icon-color: blue;
+  --overlay-bg: rgba(0, 0, 0, 0.6);
+}
+
+.hero-banner {
+  background: url('./herobanner.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  background-size: cover; /* Ensure the background image covers the entire area */
+}
+
+/* Overlay for Dark Effect */
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Lower than the menu */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Text Container */
+.hero-banner .container {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* ✅ Mobile Fixes */
+@media (max-width: 768px) {
+  .hero-banner {
+      height: 50vh; /* Reduce height on mobile */
+      background-size: cover; /* Ensure full image is visible */
+      margin: 0px;
+  }
+
+  .hero-banner .container {
+      font-size: 20px; /* Reduce text size for better readability */
+      padding: 10px;
+  }
+}
+
+/* ✅ Small Mobile Fixes */
+@media (max-width: 480px) {
+  .hero-banner {
+      height: 40vh; /* Further reduce height on small mobile devices */
+      background-size: cover; /* Ensure full image is visible */
+      margin: 0px;
+  }
+
+  .hero-banner .container {
+      font-size: 18px; /* Further reduce text size for better readability */
+      padding: 5px;
+  }
+}

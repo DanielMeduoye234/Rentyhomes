@@ -1,0 +1,174 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --button-color: green;
+  --icon-color: blue;
+}
+
+.hero-section {
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 50px 20px;
+  
+}
+
+.hero-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-img {
+  width: 100%;
+  
+}
+
+.hero-img img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 30px;
+  height: auto;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 50%;
+}
+
+.hero-text h1 {
+  color: var(--text-color);
+  font-size: 66px;
+  font-weight: bold;
+  line-height: 65px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  width: 90%;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f8f8;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+.search-option .icon {
+  color: var(--button-color);
+  font-size: 24px;
+}
+
+.search-option label {
+  font-size: 12px;
+  color: gray;
+}
+
+.search-option select {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.search-button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background: #249e5f;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+      font-size: 40px;
+      line-height: 55px;
+  }
+  .hero-text p {
+      font-size: 13px;
+      width: 100%;
+  }
+  .search-bar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero-section {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 50px 5px;
+}
+  .hero-section .container {
+      align-items: center;
+      gap: 30px;
+      flex-direction: column-reverse;
+  }
+  .hero-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .hero-text {
+      width: 90%;
+      text-align: center;
+  }
+  .hero-text h1 {
+      font-size: 45px;
+      line-height: 45px;
+      text-align: left;
+      font-weight: 600;
+  }
+  .hero-text p {
+      text-align: left;
+      font-size: 16px;
+      line-height: 26px;
+  }
+  .search-bar {
+      flex-direction: column;
+      width: 100%;
+      gap: 12px;
+      padding: 15px;
+  }
+  .search-option {
+      width: 100%;
+      justify-content:left;
+  }
+  .search-button {
+      width: 100%;
+      padding: 15px;
+  }
+}

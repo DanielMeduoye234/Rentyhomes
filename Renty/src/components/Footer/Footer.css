@@ -1,0 +1,166 @@
+:root {
+    --background-color: black;
+    --text-color: white;
+    --button-color: green;
+    --icon-color: blue;
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+}
+
+.Footer {
+    margin: 50px 0px;
+}
+
+.Footer .container .top {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: var(--button-color);
+}
+
+.more-renty h3 {
+    text-align: left;
+    font-family: outfit;
+    line-height: 24px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-color: var(--button-color);
+    text-decoration-thickness: 2px;
+    padding: 0px 0px 35px 0px;
+}
+
+.footerlink {
+    margin: 10px 0px;
+}
+
+.footerlink p {
+    color: grey;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.Renty-text p {
+    font-size: 12px;
+    font-family: poppins;
+    color: grey;
+}
+
+.stay-connected h3 {
+    text-align: left;
+    font-family: outfit;
+    line-height: 24px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-color: var(--button-color);
+    text-decoration-thickness: 2px;
+    padding: 0px 0px 35px 0px;
+}
+
+.stay-connected p {
+    font-size: 15px;
+    font-family: poppins;
+    color: grey;
+}
+
+.stay-connected input {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background: transparent;
+    outline: none;
+    margin: 20px 0px;
+}
+
+.stay-connected .Subscribe {
+    padding: 10px 30px;
+    background: #1FAB71;
+    color: white;
+    font-size: 18px;
+    font-family: poppins;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+
+.buttom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 0px;
+    margin: 20px 0px;
+    border-top: 1px solid var(--button-color);
+}
+
+.copyright p {
+    color: grey;
+    font-size: 15px;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.terms p {
+    color: grey;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Footer .container .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stay-connected .Subscribe {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerlink p, .Renty-text p, .stay-connected p, .copyright p, .terms p {
+        font-size: 14px;
+    }
+
+    .stay-connected input {
+        padding: 10px;
+    }
+
+    .stay-connected .Subscribe {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .buttom {
+        padding: 20px 0px;
+    }
+}

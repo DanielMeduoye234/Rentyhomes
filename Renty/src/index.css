@@ -1,0 +1,64 @@
+:root {
+  --background-color: black;
+  --text-color: white;
+  --button-color: green;
+  --icon-color: blue;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Outfit, poppins;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+p{
+  color: var(--text-color);
+}
+
+ul li{
+  list-style: none;
+
+}
+
+
+img{
+  max-width: 100%;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--text-color);
+}
+
+
+
+
+/*UTITLITY CLASSES*/
+
+.container{
+  max-width: 1150px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+
+
+/*Auth login*/
+
+.loginheading{
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

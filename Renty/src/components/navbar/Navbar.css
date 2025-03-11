@@ -1,0 +1,125 @@
+:root {
+    --background-color: black;
+    --text-color: white;
+    --button-color: green;
+    --icon-color: blue;
+}
+
+/* Navbar Styles */
+.Navbar {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    position: relative;
+}
+
+/* Property Links (Hidden on Mobile) */
+.property-links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+@media (max-width: 1024px) {
+    .property-links {
+        display: none;
+    }
+}
+
+/* Page Links */
+.page-links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+li {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Avatar (Hidden on Mobile & Tablet) */
+.avatar {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .avatar {
+        display: none;
+    }
+}
+
+/* Hamburger Menu (Hidden on Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(19, 19, 19, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+}
+
+/* Open Mobile Menu */
+.mobile-menu.open {
+    left: 0;
+}
+
+/* Close Button */
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Mobile Links */
+.mobile-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.mobile-links li {
+    font-size: 20px;
+    color: white;
+}
+
+/* Backdrop Effect */
+@media (max-width: 1024px) {
+    .page-links ul {
+        display: none;
+    }
+}
+
+
